@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #151a22;
+  color: white;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.navbar-custom {
+  background-color: #586edf;
+}
+
+.navbar-custom .content {
+  margin: 0px auto;
+  padding: 6px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-custom .content input {
+  width: 30%;
+  color: rgb(80, 80, 80);
+  background-color: white;
+}
+.navbar-custom .content input::placeholder  {
+  color: rgb(80, 80, 80);
+}
+
+.navbar-custom .content input:focus-visible  {
+  border: 0px;
+  outline: none;
+}
+
+.note-app {
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 12px;
+}
+.note-app h2 {
+  padding-bottom: 30px;
+}
+
+.note-header {
+  width: 100%;
+  position: relative;
+}
+
+.count-text {
+  text-align: right;
+  font-size: 14px;
+  color: rgb(185, 185, 185);
+}
+
+.note-header .btn-right {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.note-header button {
+  background-color: #6e75ff;
+  color: white;
+  padding: 6px 18px;
+  margin-left: auto;
+  cursor: pointer;
+  text-align: right;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.note-header button:hover {
+  background-color: #4d55fa;
+}
+
+.note-body h2 {
+  margin: 40px 0px 20px 0px;
+}
+
+.list-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.note-item {
+  position: relative;
+  background-color: #1b2029;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.note-item .title {
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+
+.note-item .date {
+  padding-bottom: 12px;
+  font-size: 13px;
+}
+
+.note-item .body {
+  padding-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.note-item .action {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.action .btn {
+  padding: 6px 12px;
+  margin-left: 12px;
+  cursor: pointer;
+  color: white;
+  border: 0px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.orange {
+  background-color: #c97c4d;
+}
+
+.orange:hover {
+  background-color: #cc6f36;
+}
+.red {
+  background-color: #b2285b;
+}
+
+.red:hover {
+  background-color: #b1144e;
+}
+
+@media only screen and (max-width: 480px) {
+  .list-card {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .list-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
