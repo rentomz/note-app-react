@@ -14,11 +14,13 @@ function NoteBody({ notes, onDelete, onChangeStatus }) {
     }
   });
 
+  console.log(noteActive.length);
+
 
   return (
     <div className="note-body">
       <h2>Catatan Aktif</h2>
-      <NoteList notes={noteActive} onDelete={onDelete}  onChangeStatus={onChangeStatus}/>
+      {noteActive.length > 0 ?  <NoteList notes={noteActive} onDelete={onDelete}  onChangeStatus={onChangeStatus}/> : <h4>Tidak ada Catatan</h4> }
 
       <h2>Arsip</h2>
       <NoteList notes={archives}  onDelete={onDelete}  onChangeStatus={onChangeStatus} />
