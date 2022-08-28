@@ -23,7 +23,7 @@ function NoteBody({ notes, onDelete, onChangeStatus }) {
       {noteActive.length > 0 ?  <NoteList notes={noteActive} onDelete={onDelete}  onChangeStatus={onChangeStatus}/> : <h4>Tidak ada Catatan</h4> }
 
       <h2>Arsip</h2>
-      <NoteList notes={archives}  onDelete={onDelete}  onChangeStatus={onChangeStatus} />
+      {archives.length > 0 ? <NoteList notes={archives}  onDelete={onDelete}  onChangeStatus={onChangeStatus} /> : <h4>Arsip Tidak ada</h4>}
     </div>
   );
 }

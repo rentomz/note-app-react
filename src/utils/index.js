@@ -41,13 +41,13 @@ const getInitialData = () => ([
     createdAt: '2022-04-14T04:27:34.572Z',
     archived: false,
   },
-  {
-    id: 7,
-    title: "Git",
-    body: "version control system designed to handle everything from small to very large projects with speed and efficiency.",
-    createdAt: '2022-04-19T04:27:34.572Z',
-    archived: true,
-  },
+  // {
+  //   id: 7,
+  //   title: "Git",
+  //   body: "version control system designed to handle everything from small to very large projects with speed and efficiency.",
+  //   createdAt: '2022-04-19T04:27:34.572Z',
+  //   archived: true,
+  // },
 ]);
 
 const showFormattedDate = (date) => {
